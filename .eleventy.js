@@ -22,6 +22,9 @@ const configJs = require("./src/config/eleventy/javascript");
 
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 
+// Filter Imports
+const filterFormatDate = require("./src/config/filters/formatDate");
+
 module.exports = function (eleventyConfig) {
     /**
      *  PLUGINS
@@ -90,6 +93,16 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addTemplateFormats("js");
     eleventyConfig.addExtension("js", configJs);
+    eleventyConfig.addPassthroughCopy("./src/admin");
+
+    /**
+     *  FILTERS
+     *      Allows modification of data before it is outputted, denoted by {{ contentToPrint | filterName }}
+     *          https://www.11ty.dev/docs/filters/
+     */
+
+    // Turns a date from ISO format to a more human-readable one
+    eleventyConfig.addFilter("formatDate", filterFormatDate);
 
     return {
         dir: {
