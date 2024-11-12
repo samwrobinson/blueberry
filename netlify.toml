@@ -13,12 +13,3 @@ package = "netlify-plugin-cache"
     "public/assets/images",
     ".cache"
   ]
-
-[[plugins]]
-package = "netlify-plugin-cache"
-
-  [plugins.inputs]
-  paths = [
-    "public/assets/images", # Processed images - adjust to match your outputDir
-    ".cache" # Remote Assets
-  ]
