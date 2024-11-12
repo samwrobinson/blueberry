@@ -2,6 +2,8 @@
 const pluginDirectoryOutput = require("@11ty/eleventy-plugin-directory-output");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const pluginShopify = require("eleventy-plugin-shopify");
+const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
+
 
 // Config Imports
 const configShopify = require("./src/config/plugins/shopify");
@@ -31,6 +33,12 @@ module.exports = function (eleventyConfig) {
      *      Adds additional eleventy functionality through official or community-created add-ons
      *      https://www.11ty.dev/docs/plugins/
      */
+
+
+    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
+        urlPath: "/assets/images",
+        outputDir: "public/assets/images",
+    });
 
     // Provides benchmarks in the terminal when a website is built. Useful for diagnostics.
     // https://www.11ty.dev/docs/plugins/directory-output/

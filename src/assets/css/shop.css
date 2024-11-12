@@ -227,7 +227,7 @@
         position: absolute;
         /* 38px - 60px - wrapped in a calc function to make clamp values negative */
         bottom: calc(clamp(2.375rem, 7.9vw, 3.75rem) * -1);
-        left: 50%;
+        left: 73%;
         z-index: 10;
         overflow: hidden;
         transform: translateX(-50%);
