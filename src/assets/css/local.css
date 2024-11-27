@@ -684,12 +684,12 @@
   #pricing-1386 .cs-container .cs-card-group {
       flex-direction: row;
       align-items: stretch;
-      width: 75%;
-      max-width: 30rem;
+      width: 100%;
+      max-width: 45rem;
     }
 
   #pricing-1386 .cs-item {
-    width: 75%;
+    width: 100%;
   }
 }
 /* Desktop - 1024px */

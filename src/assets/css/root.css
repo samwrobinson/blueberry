@@ -71,6 +71,9 @@
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
         --bodyFontFamily: Arial, Helvetica, sans-serif;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
         font-family: var(--bodyFontFamily);
         margin: 0;

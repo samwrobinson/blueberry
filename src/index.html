@@ -28,7 +28,7 @@ eleventyNavigation:
                 Located in the Mad River Valley, East Warren, Vermont.
             </p>
             <div class="cs-button-group">
-                <a href="" class="cs-button-solid cs-button">Explore More</a>
+                <a href="/index#pricing-1386" class="cs-button-solid cs-button">Shop Passes</a>
                 <a href="https://www.youtube.com/watch?v=GmevGrbJUj4&t=1s" target="_blank" class="cs-button-transparent cs-button">
                     <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
                     Learn More
@@ -45,54 +45,6 @@ eleventyNavigation:
     </picture>
 </section>
 
-<!-- ============================================ -->
-<!--                Side By Side                  -->
-<!-- ============================================ -->
-
-<section id="sbs-1640">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Skiing at Blueberry lake</span>
-            <h2 class="cs-title">Located in the Mad River Valley, Vermont</h2>
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sbs-1.jpeg" | resize({width: 686, height: 840}) | webp %}">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/sbs-1.jpeg" | resize({width: 914, height: 1400}) | webp %}">
-                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/sbs-1.jpeg" | resize({width: 914, height: 1400}) | webp %}" alt="Trail at Blueberry Lake">
-            </picture>
-        </div>
-        <div class="cs-stats-group">
-            <p class="cs-text">
-                Discover the warmth and charm of our sheltered trails! With 35 kilometers across 11 trails, you can enjoy classic skiing, skating, snowshoeing, and even fat biking. From beginner-friendly paths to expert-level routes, our trails offer something for everyone. Wander through serene wooded areas or glide through wide-open meadows with breathtaking views.
-            </p>
-            <p class="cs-text">
-                We offer complete rentals for skiing and snowshoeing, so all you need to bring is your sense of adventure! Each trail is meticulously engineered and graded to provide an exceptional experience, with regularly groomed tracks, including wide paths for skating.
-            </p>
-            <p class="cs-text">
-                Bring the whole family along—young children can enjoy a ride in one of our pulk rentals. And for those with four-legged friends, well-behaved dogs are welcome—just be sure to clean up after them!
-            </p>
-            <p class="cs-text">
-                Come and explore, play, and make lasting memories on our trails.
-            </p>
-            <ul class="cs-stats">
-                <li class="cs-stat">
-                    <span class="cs-number">44</span>
-                    <span class="cs-desc">Years in Business</span>
-                </li>
-                <li class="cs-stat">
-                    <span class="cs-number">35</span>
-                    <span class="cs-desc">Kilometers of Trails</span>
-                </li>
-                <li class="cs-stat">
-                    <span class="cs-number">7</span>
-                    <span class="cs-desc">Days a Week</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-                                
 <!-- ============================================ -->
 <!--                  Pricing                     -->
 <!-- ============================================ -->
@@ -122,7 +74,7 @@ eleventyNavigation:
                 <div class="cs-flex">
                     <span class="cs-package">Season Pass</span>
                     <span class="cs-price">
-                        $200
+                        $210
                         <span class="cs-duration">/Season</span>
                     </span>
                 </div>
@@ -133,10 +85,71 @@ eleventyNavigation:
                     <a href="/shop" class="cs-button-transparent">Buy Now!</a>
                 </div>
             </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-package">Day Pass</span>
+                    <span class="cs-price">
+                        $22
+                        <span class="cs-duration">/Day</span>
+                    </span>
+                </div>
+                <div class="cs-info">
+                    <ul class="cs-ul">
+                        <li class="cs-li"><strong>Children under 5 ski for free!</strong> Thank you for supporting Blueberry Lake Cross Country Ski Center!</li>
+                    </ul>
+                    <a href="/shop" class="cs-button-transparent">Buy Now!</a>
+                </div>
+            </li>
         </ul>
     </div>
 </section>
 
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1640">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Skiing at Blueberry lake</span>
+            <h2 class="cs-title">Located in the Mad River Valley, Vermont</h2>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sbs-1.jpeg" | resize({width: 686, height: 840}) | webp %}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/sbs-1.jpeg" | resize({width: 914, height: 1400}) | webp %}">
+                <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/sbs-1.jpeg" | resize({width: 914, height: 1400}) | webp %}" alt="Trail at Blueberry Lake">
+            </picture>
+        </div>
+        <div class="cs-stats-group">
+            <p class="cs-text">
+                Discover the warmth and charm of our sheltered trails! With 35 kilometers across 11 trails, you can enjoy classic skiing, skating, snowshoeing, and even fat biking. From beginner-friendly paths to expert-level routes, our trails offer something for everyone. Wander through serene wooded areas or glide through wide-open meadows with breathtaking views.
+            </p>
+            <p class="cs-text">
+                Bring the whole family along! And for those with four-legged friends, well-behaved dogs are welcome—just be sure to clean up after them!
+            </p>
+            <p class="cs-text">
+                Come and explore, play, and make lasting memories on our trails.
+            </p>
+            <ul class="cs-stats">
+                <li class="cs-stat">
+                    <span class="cs-number">44</span>
+                    <span class="cs-desc">Years in Business</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">35</span>
+                    <span class="cs-desc">Kilometers of Trails</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">7</span>
+                    <span class="cs-desc">Days a Week</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
 <!-- ============================================ -->
 <!--              Side By Side Reverse            -->
 <!-- ============================================ -->
