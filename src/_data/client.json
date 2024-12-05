@@ -1,8 +1,8 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-123-4567",
-    "phoneFormatted": "(555) 123-4567",
+    "name": "Blueberry Lake Cross Crounty Ski Center",
+    "email": "info@blueberrylakexc.com.com",
+    "phoneForTel": "828-989-1290",
+    "phoneFormatted": "(828) 989-1290",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
@@ -17,5 +17,5 @@
         "instagram": "https://www.instagram.com/blueberrylakecrosscountryvt/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://www.codestitch.app"
+    "domain": "https://blueberrylakexc.com/"
 }
